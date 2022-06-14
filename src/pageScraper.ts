@@ -23,7 +23,7 @@ const scraperObject = {
             ? a
             : null
         );
-        let link = newLinks.filter((tx) => tx !== null)[0] as HTMLLinkElement;
+        let link = newLinks.filter((tx) => tx !== null)[0] as HTMLAnchorElement;
         return link?.href;
       },
       category
@@ -49,7 +49,7 @@ const scraperObject = {
         );
         // Extract the links from the data
         let newLinks = links.map(
-          (el) => (el.querySelector("h3 > a") as HTMLLinkElement).href
+          (el) => (el.querySelector("h3 > a") as HTMLAnchorElement).href
         );
         return newLinks;
       });
