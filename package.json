@@ -11,7 +11,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "puppeteer": "^14.3.0"
+    "puppeteer": "^14.4.0"
   },
   "devDependencies": {
     "ts-node": "^10.8.1",
