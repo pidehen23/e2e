@@ -1,8 +1,12 @@
 export interface IBookInfo {
-  bookTitle?: string;
-  bookPrice?: string;
-  imageUrl?: string;
-  bookDescription?: string;
-  upc?: string;
-  noAvailable?: string;
+  bookTitle?: string | null;
+  bookPrice?: string | null;
+  imageUrl?: string | null;
+  bookDescription?: string | null;
+  upc?: string | null;
+  noAvailable?: string | null;
+}
+
+export interface IBookMap {
+  [key: string]: IBookInfo[];
 }
