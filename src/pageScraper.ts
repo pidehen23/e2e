@@ -24,7 +24,7 @@ const scraperObject = {
             : null
         );
         let link = newLinks.filter((tx) => tx !== null)[0] as HTMLLinkElement;
-        return link.href;
+        return link?.href;
       },
       category
     );
